@@ -285,6 +285,7 @@
         canvas.style.display='block';
         landmarksCanvas.style.display = 'block';
         video.style.display='none';
+        // Automatically run face analysis as soon as the image is loaded
         runFaceAnalysis();
       };
       img.onerror = ()=>{ alert('Failed to load image.'); }
